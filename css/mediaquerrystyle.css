@@ -1,0 +1,57 @@
+@media screen and (max-width:375px){
+
+  body.nav-open{
+    background: var(--Medium-Gray);
+    overflow: hidden;
+  }
+
+  nav{
+    padding: 2rem;
+  }
+
+  .nav-option{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(0%);
+    background: var(--Almost-White);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 110vh;
+    width: 60vw;
+    padding: 8rem 2rem;
+    transition: transform 300ms linear;
+  }
+  
+  .nav-option.nav-open{
+    transform: translateX(-100%);
+  }
+
+  .nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .accounts{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 4rem 0;
+  }
+
+  .hamburger{
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+
+
+
+  .heading-content{
+    grid-template-columns: repeat(1, 100%);
+  }
+
+}
