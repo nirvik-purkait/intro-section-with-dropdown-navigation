@@ -80,15 +80,23 @@ nav{
   flex-direction: column;
   min-height: 0;
   height: 0;
-  line-height: 1.5;
+  width: max-content;
   margin-left: 2rem;
   transform: scaleY(0);
   transform-origin: top;
 }
 
-.feature-list.list-open, .company-list.list-open{
+.feature-list.list-open{
   transform: scaleY(1);
-  min-height: 110px;
+  min-height: 120px;
+  line-height: 2.2;
+  margin: 2rem 0 0 2rem;
+}
+.company-list.list-open{
+  transform: scaleY(1);
+  min-height: 80px;
+  line-height: 2.2;
+  margin: 2rem 0 0 2rem;
 }
 
 .accounts{
@@ -137,7 +145,7 @@ button.register{
 .main-heading{
   font-size: 8.6rem;
   opacity: 0.9;
-  padding-top: 8rem;
+  padding-top: 11rem;
 }
 
 .details {
