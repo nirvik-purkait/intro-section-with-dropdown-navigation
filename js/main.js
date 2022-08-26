@@ -15,9 +15,44 @@ hamburgerButton.addEventListener('click', function () {
     navbarClose = true    
     hamburgerButton.src = './images/icon-menu.svg'
   }
-  console.log(navbarClose);
 })
 
+
+const featureButton = document.querySelector('.feature-button');
+const featureList = document.querySelector('.feature-list')
+const companyButton = document.querySelector('.company-button');
+const companyList = document.querySelector('.company-list')
+const dropdownImage = document.querySelectorAll('.dropdown-image')
+let open1 = false
+let open2 = false
+
+featureButton.addEventListener('click', function () {
+
+  featureList.classList.toggle('list-open')
+
+  if (open1 === false) {
+    open1 = true;
+    dropdownImage[0].src = './images/icon-arrow-up.svg'
+  }
+  else {
+    open1 = false;
+    dropdownImage[0].src = './images/icon-arrow-down.svg'
+  }
+})
+
+
+companyButton.addEventListener('click', function () {
+  companyList.classList.toggle('list-open')
+  
+  if (open2 === false) {
+    open2 = true;
+    dropdownImage[1].src = './images/icon-arrow-up.svg'
+  }
+  else {
+    open2 = false;
+    dropdownImage[1].src = './images/icon-arrow-down.svg'
+  }
+})
 
 
 window.addEventListener('resize', function () {
@@ -32,11 +67,3 @@ window.addEventListener('resize', function () {
   }
 })
 
-
-const headingText = document.querySelector('.heading-text')
-const headingImage = document.querySelector('.heading-image')
-
-
-console.log(headingText.clientHeight);
-
-headingImage.style.height = `${headingText.clientHeight}px`

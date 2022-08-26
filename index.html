@@ -29,10 +29,35 @@
         <div class="nav-option">
 
           <div class="nav-item">
-            <span>Features <img src="./images/icon-arrow-down.svg" alt=""></span>
-            <span>Company <img src="./images/icon-arrow-down.svg" alt=""></span>
-            <span>Careers</span>
-            <span>About</span>
+            <div class="each-item">
+              <button class="feature-button">
+                <span>Features <img class="dropdown-image" src="./images/icon-arrow-down.svg" alt=""></span>
+              </button>
+              <div class="feature-list">
+                <span>abcd</span>
+                <span>efgh</span>
+                <span>ijkl</span>
+                <span>mnop</span>
+              </div>
+            </div>
+            <div class="each-item">
+              <button class="company-button">
+              <span>Company <img class="dropdown-image" src="./images/icon-arrow-down.svg" alt=""></span>
+            </button>
+            <div class="company-list">
+              <span>abcd</span>
+              <span>efgh</span>
+              <span>ijkl</span>
+              <span>mnop</span>
+            </div>
+            </div>
+            <div class="each-item">
+              <button><span>Careers</span></button>
+            </div>
+            <div class="each-item">
+              <button><span>About</span></button>
+            </div>
+            
           </div>
   
           <div class="accounts">
@@ -71,11 +96,13 @@
       </div>
       
       <div class="heading-image">
-        <img class="hero-image" src="./images/image-hero-desktop.png" alt="">
+        <picture>
+          <source media="(max-width:375px)" srcset="./images/image-hero-mobile.png">
+          <img class="hero-image" src="./images/image-hero-desktop.png" alt="Flowers">
+        </picture>      
       </div>
 
-    </div>  
-
+    </div>
 
   </header>
 

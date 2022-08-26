@@ -21,23 +21,45 @@
     height: 110vh;
     width: 60vw;
     padding: 8rem 2rem;
-    transition: transform 300ms linear;
+    box-shadow: 0 0 0 0vw var(--Medium-Gray);
+    z-index: 1;
+    transition: transform 300ms linear, box-shadow 300ms linear;
   }
   
   .nav-option.nav-open{
     transform: translateX(-100%);
+    box-shadow: 0 0 0 40vw var(--Medium-Gray);
   }
 
   .nav-item{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    opacity: 0.6;
+    gap: 0;
+  }
+
+  .nav-item button{
+    margin-top: 2rem;
+  }
+
+  .nav-item span{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .feature-list, .company-list{
+    position: relative;
   }
 
   .accounts{
     display: flex;
     flex-direction: column;
     gap: 0;
+    width: 100%;
     padding: 4rem 0;
   }
 
@@ -52,6 +74,34 @@
 
   .heading-content{
     grid-template-columns: repeat(1, 100%);
+    padding: 0;
+    gap: 0;
+  }
+
+  .heading-text{
+    text-align: center;
+  }
+
+  .main-heading{
+    font-size: 3rem;
+  }
+
+  .details{
+    padding: 3rem 1rem;
+  }
+
+  .icon{
+    padding: 4rem 1rem;
+  }
+
+  .heading-image{
+    grid-row-start: 1;
+  }
+  
+  .hero-image{
+    width: 100%;
+    object-fit: cover;
+    height: unset;    
   }
 
 }
